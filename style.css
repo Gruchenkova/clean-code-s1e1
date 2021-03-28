@@ -16,7 +16,7 @@ body {
   width: 100%;
 }
 
-.info .more-inf {
+.info .info__link {
   font-family: fantasy, cursive;
 }
 
@@ -34,13 +34,17 @@ body {
   margin: 0 auto 0;
 }
 
+.completed-tasks__input,
+.completed-tasks__label,
+.incomplete-tasks__label,
+.add-tasks__input,
 .task {
   width: 56%;
   display: inline-block;
   flex-grow: 1
 }
 
-.task-wrapper {
+.add-tasks__wrapper {
   display: flex;
 }
 
@@ -169,11 +173,11 @@ ul li input[type="text"] {
   display: none;
 }
 
-.edit-mode input[type="text"] {
+.incomplete-tasks__li input[type="text"] {
   display: inline-block;
   width: 224px;
 }
 
-.edit-mode label {
+.incomplete-tasks__li label {
   display: none;
 }
